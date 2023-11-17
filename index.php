@@ -38,6 +38,32 @@
         </tr>
         </thead>
         <tbody>
+
+        <?php
+        include "config.php";
+        $sql_select = "SELECT * FROM announcement";
+        $result = mysqli_query($connect, $sql_select); // this is an array
+        foreach ($result as $value) {
+        ?>
+        <!-- You will dynamically populate this part with PHP -->
+        <tr class="hover:bg-gray-100 text-center">
+            <td class="py-2 px-4 border-b"><?php echo $value["ID"];?></td>
+            <td class="py-2 px-4 border-b"><?php echo $value["Title"];?></td>
+            <td class="py-2 px-4 border-b"><?php echo $value["Category"];?></td>
+            <td class="py-2 px-4 border-b"><?php echo $value["Description"];?></td>
+            <td class="py-2 px-4 border-b"><?php echo $value["Price"];?></td>
+            <td class="py-2 px-4 border-b flex justify-evenly">
+
+
+                <form action="del_ann.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $value["ID"];?>">
+                    <button class="text-red-500 hover:text-red-700 ml-2" id="del-btn">Delete</button>
+                </form>
+
+
+                <form action="edit_ann.php" method="post">
+                    <button class="text-blue-500 hover:text-blue-700">Edit</button>
+                </form>
             </td>
         </tr>
         <?php } ?>
