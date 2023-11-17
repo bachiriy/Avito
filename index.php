@@ -55,7 +55,7 @@
             <td class="py-2 px-4 border-b flex justify-evenly">
 
 
-                <form action="del_ann.php" method="post">
+                <form action="del_ann_confirmation.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $value["ID"];?>">
                     <button class="text-red-500 hover:text-red-700 ml-2" id="del-btn">Delete</button>
                 </form>
