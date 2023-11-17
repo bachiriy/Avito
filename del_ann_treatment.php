@@ -5,10 +5,10 @@ if(isset($_POST["yes_btn"])) {
 
     $id = $_POST["id_input"];
     $sql = "DELETE FROM announcement WHERE ID = ?";
-    $stmt = $connect->prepare($sql);
+    $prepare = $connect->prepare($sql);
 
-    $stmt->bind_param("i", $id);
-    $result = $stmt->execute();
+    $prepare->bind_param("i", $id);
+    $result = $prepare->execute();
 
     if ($result == true) {
         header('location: index.php');
