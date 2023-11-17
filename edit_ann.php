@@ -33,7 +33,7 @@
                    class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500">
         </div>
         <div class="text-center">
-            <button name="add" class="hover:opacity-80 font-bold transition-all bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer">ADD</button>
+            <button name="edit" class="hover:opacity-80 font-bold transition-all bg-blue-500 text-white px-4 py-2 rounded-md cursor-pointer">EDIT</button>
         </div>
     </form>
 </div>
