@@ -7,7 +7,6 @@ if (isset($_POST['add'])) {
     $category = $_POST['category'];
     $description = $_POST['description'];
     $price = $_POST['price'];
-    include "test.sql";
 
     $sql = "INSERT INTO announcement (Title, Category, Description, Price) VALUES (?,?,?,?);";
     $stm = $connect->prepare($sql);
