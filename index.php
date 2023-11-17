@@ -62,6 +62,11 @@
 
 
                 <form action="edit_ann.php" method="post">
+                    <input type="hidden" name="id" value="<?php echo $value["ID"];?>">
+                    <input type="hidden" name="title" value="<?php echo $value["Title"];?>">
+                    <input type="hidden" name="cat" value="<?php echo $value["Category"];?>">
+                    <input type="hidden" name="desc" value="<?php echo $value["Description"];?>">
+                    <input type="hidden" name="price" value="<?php echo $value["Price"];?>">
                     <button class="text-blue-500 hover:text-blue-700">Edit</button>
                 </form>
             </td>
