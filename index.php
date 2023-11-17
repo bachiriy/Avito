@@ -59,8 +59,7 @@
                     <input type="hidden" name="id" value="<?php echo $value["ID"];?>">
                     <button class="text-red-500 hover:text-red-700 ml-2" id="del-btn">Delete</button>
                 </form>
-
-
+                
                 <form action="edit_ann.php" method="post">
                     <input type="hidden" name="id" value="<?php echo $value["ID"];?>">
                     <input type="hidden" name="title" value="<?php echo $value["Title"];?>">
