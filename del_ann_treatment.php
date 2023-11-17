@@ -3,7 +3,7 @@ include 'config.php';
 
 if(isset($_POST["yes_btn"])) {
 
-    $id = $_POST["id_input"];
+    $id = $_POST["id"];
     $sql = "DELETE FROM announcement WHERE ID = ?";
     $prepare = $connect->prepare($sql);
 
