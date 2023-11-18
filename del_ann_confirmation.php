@@ -7,7 +7,7 @@
 <body>
 
 <div class="max-w-md mx-auto bg-white p-6 rounded-md shadow-md mt-8 absolute top-52 inset-x-96">
-    <p class="mb-4 text-lg">Are you sure you want to delete this announcement?</p>
+    <p class="mb-4 text-lg">Are you sure you want to delete this Announcement?</p>
 
     <form  action="del_ann_treatment.php" method="post"  class="flex justify-end space-x-4" id="yes-no-btns">
         <input type="hidden" value="<?php echo $_POST['id']; ?>" name="id">
