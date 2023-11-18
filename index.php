@@ -25,7 +25,7 @@
 <div class="div container mx-auto my-8 p-8 bg-white shadow-lg rounded-lg">
     <h1 class="text-2xl font-semibold mb-6">Announcements</h1>
 
-    <!-- Table -->
+
     <table class="min-w-full bg-white border border-gray-300">
         <thead>
         <tr class="w-full">
@@ -45,7 +45,7 @@
         $result = mysqli_query($connect, $sql_select); // this is an array
         foreach ($result as $value) {
         ?>
-        <!-- You will dynamically populate this part with PHP -->
+
         <tr class="hover:bg-gray-100 text-center">
             <td class="py-2 px-4 border-b"><?php echo $value["ID"];?></td>
             <td class="py-2 px-4 border-b"><?php echo $value["Title"];?></td>
